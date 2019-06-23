@@ -3,7 +3,10 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 const app = express();
 const router = express.Router();
+const db = require('./db');
 //const mongoose = require("mongoose");
+
+const MongoClient = require('mongodb');
 
 //add the password to an env file
 //mongoose.connect('mongodb+srv://admin:pword@carwash-igyrc.mongodb.net/test?retryWrites=true&w=majority');
